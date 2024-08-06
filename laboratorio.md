@@ -54,3 +54,18 @@ Digest: sha256:932ac36fabe1d2103ed3edbe66224ed2afe0041b317bcdb6f5d9be63594f0030
 Status: Downloaded newer image for httpd:latest
 e0fb141f88f955d654807c5c00e8878e2e47385b344907e71451d6a56d4992a1
 
+
+## Ejercicios 3.1.: Elimina el contenedor de Ubuntu que creaste en el ejercicio 2.1:
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                        PORTS                                   NAMES
+e0fb141f88f9   httpd     "httpd-foreground"       13 minutes ago   Up 13 minutes                 0.0.0.0:8000->80/tcp, :::8000->80/tcp   romantic_bose
+f7525b4a4c8f   nginx     "/docker-entrypoint.…"   13 minutes ago   Up 13 minutes                 0.0.0.0:8080->80/tcp, :::8080->80/tcp   trusting_tesla
+39877f4543dc   ubuntu    "bash"                   16 minutes ago   Exited (0) 14 minutes ago                                             confident_yalow
+96d9b293cf18   ubuntu    "bash"                   19 minutes ago   Exited (130) 18 minutes ago                                           musing_hugle
+
+##3.2. Elimina todos los contenedores detenidos:
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+96d9b293cf18a41cb4ae94c48f5569fcc5e0890a68b51b237cd54e10fcae3bae
+
+Total reclaimed space: 5B

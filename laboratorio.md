@@ -36,3 +36,21 @@ ddfb50ba1977: Pull complete
 Digest: sha256:65438c2e26dbf9f5db4b5553e332747fa20722c1b7c7ccc6f8480396ff4186db
 Status: Downloaded newer image for python:3.9
 docker.io/library/python:3.9
+
+
+## Ejercicios 2.1.: Ejecuta un contenedor de Ubuntu en modo interactivo
+root@39877f4543dc:/#
+
+##2.2. Ejecuta un servidor web Apache en segundo plano, mapeando el puerto 8000 del host al puerto 80 del contenedor:
+Unable to find image 'httpd:latest' locally
+latest: Pulling from library/httpd
+efc2b5ad9eec: Already exists 
+fce1785eb819: Pull complete 
+4f4fb700ef54: Pull complete 
+f214daa0692f: Pull complete 
+05383fd8b2b3: Pull complete 
+88ad12232aa1: Pull complete 
+Digest: sha256:932ac36fabe1d2103ed3edbe66224ed2afe0041b317bcdb6f5d9be63594f0030
+Status: Downloaded newer image for httpd:latest
+e0fb141f88f955d654807c5c00e8878e2e47385b344907e71451d6a56d4992a1
+

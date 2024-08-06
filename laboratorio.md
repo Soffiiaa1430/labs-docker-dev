@@ -69,3 +69,22 @@ Deleted Containers:
 96d9b293cf18a41cb4ae94c48f5569fcc5e0890a68b51b237cd54e10fcae3bae
 
 Total reclaimed space: 5B
+
+
+#Ejercicio 1: Crear un Dockerfile simple con Ubuntu y actualizar paquetes
+
+docker build -t ubuntu-updated:latest .
+[+] Building 9.8s (6/6) FINISHED                        docker:default
+ => [internal] load build definition from Dockerfile              0.1s
+ => => transferring dockerfile: 97B                               0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:latest  0.0s
+ => [internal] load .dockerignore                                 0.1s
+ => => transferring context: 2B                                   0.0s
+ => [1/2] FROM docker.io/library/ubuntu:latest                    0.1s
+ => [2/2] RUN apt-get update && apt-get upgrade -y                8.5s
+ => exporting to image                                            0.6s 
+ => => exporting layers                                           0.4s 
+ => => writing image sha256:01e18ee1b0381bae90ec39b6c49fbd556b20  0.0s 
+ => => naming to docker.io/library/ubuntu-updated:latest
+
+ 

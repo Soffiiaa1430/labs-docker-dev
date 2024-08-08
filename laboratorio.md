@@ -183,4 +183,23 @@ docker build -t ubuntu-updated:latest .
  => => naming to docker.io/library/ubuntu-updated:latest 
 
 
+ ##Ejercicio 3: Ejecutar un script Python al iniciar el contenedor
+ 
+@Soffiiaa1430 ➜ /workspaces/labs-docker-dev (main) $ docker build -t ubuntu-updated:latest .
+[+] Building 3.7s (8/8) FINISHED                               docker:default
+ => [internal] load build definition from Dockerfile                     0.1s
+ => => transferring dockerfile: 111B                                     0.0s
+ => [internal] load metadata for docker.io/library/python:3.9            0.0s
+ => [internal] load .dockerignore                                        0.1s
+ => => transferring context: 2B                                          0.0s
+ => CACHED [1/3] FROM docker.io/library/python:3.9                       0.0s
+ => [internal] load build context                                        0.1s
+ => => transferring context: 30B                                         0.0s
+ => [2/3] WORKDIR /app                                                   0.2s
+ => [3/3] COPY script.py .                                               0.2s
+ => exporting to image                                                   2.7s
+ => => exporting layers                                                  2.6s
+ => => writing image sha256:2e81b75bbc45e191c5cc9ba5f3097c5764d700bfa8b  0.0s
+ => => naming to docker.io/library/ubuntu-updated:latest 
+
  

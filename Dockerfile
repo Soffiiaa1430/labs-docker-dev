@@ -1,2 +1,4 @@
-FROM nginx:latest
-COPY index.html /usr/share/nginx/html/
+FROM python:3.9
+WORKDIR /app
+COPY script.py .
+CMD ["python", "script.py"]

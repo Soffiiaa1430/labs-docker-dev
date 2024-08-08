@@ -123,3 +123,23 @@ docker build -t ubuntu-updated:latest .
 ##Ejecutar:
 11294e088fb1562756c5039f791020bb596977bb671b92980fbe3ee1523a4307
 
+
+##Ejercicio 5: Modificar el Dockerfile de Nginx para exponer el puerto 80
+##Reconstruir:
+
+@Soffiiaa1430 ➜ /workspaces/labs-docker-dev (main) $ docker build -t my-nginx:latest .
+[+] Building 0.6s (6/6) FINISHED                               docker:default
+ => [internal] load build definition from Dockerfile                     0.0s
+ => => transferring dockerfile: 148B                                     0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:latest         0.0s
+ => [internal] load .dockerignore                                        0.1s
+ => => transferring context: 2B                                          0.0s
+ => [1/2] FROM docker.io/library/ubuntu:latest                           0.0s
+ => CACHED [2/2] RUN apt-get update && apt-get install -y nginx          0.0s
+ => exporting to image                                                   0.1s
+ => => exporting layers                                                  0.0s
+ => => writing image sha256:c8c1466c5c09d3910dd455aa398f0d1aba34d89a945  0.0s
+ => => naming to docker.io/library/my-nginx:latest 
+
+
+ 

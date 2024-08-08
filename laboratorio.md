@@ -164,4 +164,23 @@ docker build -t ubuntu-updated:latest .
  => => naming to docker.io/library/ubuntu-updated:latest 
 
 
+ ##Ejercicio 2: Usar WORKDIR y copiar un archivo
+ 
+@Soffiiaa1430 ➜ /workspaces/labs-docker-dev (main) $ docker build -t ubuntu-updated:latest .
+[+] Building 0.5s (7/7) FINISHED                               docker:default
+ => [internal] load build definition from Dockerfile                     0.1s
+ => => transferring dockerfile: 94B                                      0.0s
+ => [internal] load metadata for docker.io/library/nginx:latest          0.0s
+ => [internal] load .dockerignore                                        0.1s
+ => => transferring context: 2B                                          0.0s
+ => [internal] load build context                                        0.1s
+ => => transferring context: 29B                                         0.0s
+ => [1/2] FROM docker.io/library/nginx:latest                            0.0s
+ => CACHED [2/2] COPY index.html /usr/share/nginx/html/                  0.0s
+ => exporting to image                                                   0.1s
+ => => exporting layers                                                  0.0s
+ => => writing image sha256:c61936cd81270e25ebe9aac3ec656b641d2e231ce0d  0.0s
+ => => naming to docker.io/library/ubuntu-updated:latest 
+
+
  

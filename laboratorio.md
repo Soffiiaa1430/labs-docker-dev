@@ -103,6 +103,23 @@ docker build -t ubuntu-updated:latest .
  => => naming to docker.io/library/ubuntu-updated:latest
 
 
- 
+ ##Ejercicio 4: Construir y ejecutar la imagen de Nginx
 
- 
+##Construir:
+[+] Building 0.4s (6/6) FINISHED                        docker:default
+ => [internal] load build definition from Dockerfile              0.0s
+ => => transferring dockerfile: 137B                              0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:latest  0.0s
+ => [internal] load .dockerignore                                 0.0s
+ => => transferring context: 2B                                   0.0s
+ => [1/2] FROM docker.io/library/ubuntu:latest                    0.0s
+ => CACHED [2/2] RUN apt-get update && apt-get install -y nginx   0.0s
+ => exporting to image                                            0.1s
+ => => exporting layers                                           0.0s
+ => => writing image sha256:328062377be60acb607ed55bd77ba85222e0  0.0s
+ => => naming to docker.io/library/my-nginx:latest 
+
+
+##Ejecutar:
+11294e088fb1562756c5039f791020bb596977bb671b92980fbe3ee1523a4307
+

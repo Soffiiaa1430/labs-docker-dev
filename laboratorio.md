@@ -142,4 +142,26 @@ docker build -t ubuntu-updated:latest .
  => => naming to docker.io/library/my-nginx:latest 
 
 
+
+##Tema 2: Instrucciones comunes en Dockerfile
+##Ejercicio 1: Copiar un archivo HTML local a una imagen de Nginx
+
+
+@Soffiiaa1430 ➜ /workspaces/labs-docker-dev (main) $ docker build -t ubuntu-updated:latest .
+[+] Building 2.8s (7/7) FINISHED                               docker:default
+ => [internal] load build definition from Dockerfile                     0.1s
+ => => transferring dockerfile: 94B                                      0.0s
+ => [internal] load metadata for docker.io/library/nginx:latest          0.0s
+ => [internal] load .dockerignore                                        0.0s
+ => => transferring context: 2B                                          0.0s
+ => [internal] load build context                                        0.4s
+ => => transferring context: 31B                                         0.0s
+ => [1/2] FROM docker.io/library/nginx:latest                            0.8s
+ => [2/2] COPY index.html /usr/share/nginx/html/                         0.2s
+ => exporting to image                                                   1.2s
+ => => exporting layers                                                  1.1s
+ => => writing image sha256:c61936cd81270e25ebe9aac3ec656b641d2e231ce0d  0.0s
+ => => naming to docker.io/library/ubuntu-updated:latest 
+
+
  
